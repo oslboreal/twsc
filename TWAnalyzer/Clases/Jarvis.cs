@@ -209,6 +209,30 @@ namespace TWAnalyzer
         }
 
         /// <summary>
+        /// Like all timeline tweets.
+        /// </summary>
+        /// <returns>int Count of likes</returns>
+        public static int saveTimeLinePosts()
+        {
+            int count = 0;
+
+            var collection = Jarvis.getTimeLine(20);
+
+            foreach (var tweet in collection)
+            {
+                // En caso de que el Tweet en cuestión no esté Likeado, lo likeamos.
+                // Si el tw no lo tenemos en la base.
+                if (tweet.IsFavorited == false)
+                {
+                    // Almacenamos el Tw
+                    // 
+                    count++;
+                }
+            }
+            return count;
+        }
+
+        /// <summary>
         /// Obtain a colection of all HOmeTimeline Tweets
         /// </summary>
         /// <returns>List<TwitterStatus> </returns>
