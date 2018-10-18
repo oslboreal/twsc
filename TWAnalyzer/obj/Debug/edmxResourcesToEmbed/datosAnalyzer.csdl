@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="dataAnalyzerModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="dataAnalyzerEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="JarvisUserSet" EntityType="dataAnalyzerModel.JarvisUser" />
+    <EntitySet Name="JarvisBrainSet" EntityType="dataAnalyzerModel.JarvisBrain" />
+  </EntityContainer>
+  <EntityType Name="JarvisUser">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="userCode" Type="String" Nullable="false" />
+    <Property Name="userFriendship" Type="String" Nullable="false" />
+    <Property Name="userName" Type="String" Nullable="false" />
+    <Property Name="userFollowing" Type="String" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JarvisBrain">
+    <Key>
+      <PropertyRef Name="followedUsers" />
+    </Key>
+    <Property Name="followedUsers" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="likesCount" Type="String" Nullable="false" />
+    <Property Name="followersCountFirstTime" Type="String" Nullable="false" />
+    <Property Name="followersCountLastTime" Type="String" Nullable="false" />
+    <Property Name="isFirstTime" Type="String" Nullable="false" />
+    <Property Name="accountTag" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>
