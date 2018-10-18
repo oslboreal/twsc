@@ -67,6 +67,18 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Google.Protobuf.dll" size="294400">
+      <assemblyIdentity name="Google.Protobuf" version="3.5.1.0" publicKeyToken="A7D26565BAC4D604" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>kmmLSyM9YCkmP+X33YMDTg/6sJlFHUuInLwRv1o/LXM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hammock.dll" size="203264">
       <assemblyIdentity name="Hammock" version="1.0.0.0" publicKeyToken="C148CFBA29ED1A4D" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -75,6 +87,18 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>l8omQf792g0UkaCsErC6aHz8Ajsf/wZ9Wz4r8oQmOKY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MySql.Data.dll" size="698368">
+      <assemblyIdentity name="MySql.Data" version="8.0.12.0" publicKeyToken="C5687FC88969C44D" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>o1A1TiMHyyY2HLODhWlzi01juSSiEk3jKsgc9fnbhpo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -91,14 +115,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TWAnalyzer.exe" size="462360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="RapiTools.dll" size="12288">
+      <assemblyIdentity name="RapiTools" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>5PUh6zqA5HeH0OIiMwYFbQR6WTQqHOQHoCr1r7thRfk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TWAnalyzer.exe" size="459264">
       <assemblyIdentity name="TWAnalyzer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mgJZJ9bVG45dT5MaZcgBRuftpdV7Vg4S7utpozUf0D4=</dsig:DigestValue>
+        <dsig:DigestValue>lRu7ls2B3DBTWmoJpjLiL3msEFiTdcC7LbLVco23Nhs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -114,13 +150,13 @@
       </hash>
     </dependentAssembly>
   </dependency>
-  <file name="TWAnalyzer.exe.config" size="2344">
+  <file name="TWAnalyzer.exe.config" size="2336">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>2bXtYz3QjH2tCuV/9BUzxBDqpAFAmdh4MTyE94HX6eY=</dsig:DigestValue>
+      <dsig:DigestValue>Jou08/VywCngSxx/Fn/Dxt6ZKCpFyhOmHphI5rMtu1w=</dsig:DigestValue>
     </hash>
   </file>
   <file name="twico.ico" size="217803">

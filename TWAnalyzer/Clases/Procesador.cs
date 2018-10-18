@@ -10,10 +10,8 @@ namespace TWAnalyzer
         #region Propiedades, campos y constructor
 
         public static Procesador Proceso = new Procesador();
-
         public DateTime fechaProximoPeriodo;
         public DateTime fechaProximaInstancia;
-
         public int Instancia { get; set; }
         public int PostsRobados { get; set; }
 
@@ -50,9 +48,7 @@ namespace TWAnalyzer
                     fechaProximoPeriodo = DateTime.Now.AddHours(6);
                     fechaProximaInstancia = DateTime.Now.AddMinutes(15);
                     // Reiniciamos los indicadores
-                    Instancia = 0;
                     PostsRobados = 0;
-                    //AlmacenarEstados();
 
                     Logger.Info($"|Log - {DateTime.Now}| Periodo siguiente: {fechaProximoPeriodo} -=- NUEVO PERIODO INICIADO.\n");
                 }
@@ -67,15 +63,15 @@ namespace TWAnalyzer
                             fechaProximaInstancia = DateTime.Now.AddMinutes(15);
                             Instancia++;
 
-                            PostsRobados += Jarvis.saveTimeLinePosts();
-                            //AlmacenarEstados(); Cantidad posts, Instancia, etc.
+                            // TODO: Uncomment cuando esté listo.
+                            //PostsRobados += Jarvis.saveTimeLinePosts();
 
                             Logger.Info($"|Log - {DateTime.Now}| Periodo siguiente: {fechaProximoPeriodo} - Instancia: {Instancia} - Likes dados: {PostsRobados}\n");
                         }
                         else
                         {
                             Logger.Info($"|Log - {DateTime.Now}| Periodo siguiente: {fechaProximoPeriodo} - Instancia: {Instancia} - Likes dados: {PostsRobados}");
-                            Logger.Info($"|Log - {DateTime.Now}| Se llegó al limite de Likes dados, esperando el próximo periodo.\n\n");
+                            Logger.Info($"|Log - {DateTime.Now}| Se llegó al limite de Posts robados, esperando el próximo periodo.\n\n");
                         }
 
                     }
@@ -97,7 +93,6 @@ namespace TWAnalyzer
         /// </summary>
         public void Detener()
         {
-            AlmacenarEstados();
             relojControlador.Dispose();
         }
 
@@ -115,6 +110,7 @@ namespace TWAnalyzer
             Vista.fechaProximoProcesamiento = this.fechaProximaInstancia;
             Vista.fechaNuevoPeriodo = this.fechaProximoPeriodo;
         }
+
         #endregion
     }
 }

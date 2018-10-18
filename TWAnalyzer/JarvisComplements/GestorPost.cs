@@ -7,17 +7,17 @@ using RapiTools.Fields;
 
 namespace TWAnalyzer.JarvisComplements
 {
-    public class GestorPost
+    public static class GestorPost
     {
-        NumericField PublicacionActual { get; set; } = new NumericField($"{Jarvis.Nombre}-GestorPost-PublicacionActual");
-        NumericField ProximaPublicacion { get; set; } = new NumericField($"{Jarvis.Nombre}-GestorPost-ProximaPublicacion");
+        public static NumericField PublicacionActual { get; set; } = new NumericField($"{Jarvis.Nombre}-GestorPost-PublicacionActual");
+        public static NumericField ProximaPublicacion { get; set; } = new NumericField($"{Jarvis.Nombre}-GestorPost-ProximaPublicacion");
 
         /// <summary>
         /// Método encargado de almacenar una nueva publicación en el fichero.
         /// </summary>
         /// <param name="publicacion"></param>
         /// <returns></returns>
-        public bool GuardarPost(Post publicacion)
+        static public bool GuardarPost(Post publicacion)
         {
             return false;
         }
@@ -27,7 +27,7 @@ namespace TWAnalyzer.JarvisComplements
         /// </summary>
         /// <param name="id"></param>
         /// <returns>Retorna una publicación, en caso de no encontrarla retornará nulo.</returns>
-        private Post ObtenerPostPorId(int id)
+        static private Post ObtenerPostPorId(int id)
         {
             return null;
         }
@@ -36,7 +36,7 @@ namespace TWAnalyzer.JarvisComplements
         /// Obtiene la próxima publicación.
         /// </summary>
         /// <returns></returns>
-        public Post ObtenerProximoPost()
+        static public Post ObtenerProximoPost()
         {
             return null;
         }
@@ -46,9 +46,19 @@ namespace TWAnalyzer.JarvisComplements
         /// </summary>
         /// <param name="publicacion"></param>
         /// <returns></returns>
-        private bool ActualizarPost(Post publicacion)
+        static private bool ActualizarPost(Post publicacion)
         {
             return false;
+        }
+
+        /// <summary>
+        /// Recorre el archivo que contiene las publicaciones e indica si la publicación existe o no.
+        /// </summary>
+        /// <param name="body"></param>
+        /// <returns></returns>
+        public static bool ExistePost(string body)
+        {
+            throw new NotImplementedException();
         }
     }
 }

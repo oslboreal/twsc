@@ -5,6 +5,7 @@ using TweetSharp;
 using System.Threading;
 using System.IO;
 using RapiTools.Fields;
+using TWAnalyzer.JarvisComplements;
 
 namespace TWAnalyzer
 {
@@ -220,14 +221,14 @@ namespace TWAnalyzer
 
             var collection = Jarvis.getTimeLine(20);
 
-            foreach (var tweet in collection)
+            foreach (var post in collection)
             {
-                // En caso de que el Tweet en cuestión no esté Likeado, lo likeamos.
                 // Si el tw no lo tenemos en la base.
-                if (tweet.IsFavorited == false)
+                if (!GestorPost.ExistePost(post.Text))
                 {
                     // Almacenamos el Tw
-                    // 
+                    Post nuevo = new Post(GestorPost.ProximaPublicacion.ObtainValue(), DateTime.Now, post.Text);
+                    GestorPost.GuardarPost(nuevo);
                     count++;
                 }
             }
