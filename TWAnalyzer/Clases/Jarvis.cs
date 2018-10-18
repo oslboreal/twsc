@@ -9,11 +9,9 @@ namespace TWAnalyzer
 {
     static class Jarvis
     {
-        // Jarvis tools
         private static JarvisResponse jResponse;
         private static TwitterService mainService;
 
-        // Aux fields.
         private static List<TwitterUser> auxUserList;
         private static List<TwitterStatus> auxTwitList;
         public static long likeCount = 0;

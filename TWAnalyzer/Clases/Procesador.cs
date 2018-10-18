@@ -119,6 +119,7 @@ namespace TWAnalyzer
         }
 
         #region Métodos de comunicación con la vista.
+
         /// <summary>
         /// Método encargado de Actualizar todos los elementos de la Interface gráfica.
         /// </summary>
@@ -134,7 +135,6 @@ namespace TWAnalyzer
         #endregion
 
         #region Métodos de serialización de información.
-
 
         /// <summary>
         /// Método encargado de Almacenar todos los estados.
@@ -238,7 +238,6 @@ namespace TWAnalyzer
                 swriter.Close();
             }
         }
-
 
         /// <summary>
         /// Lee los Likesdados

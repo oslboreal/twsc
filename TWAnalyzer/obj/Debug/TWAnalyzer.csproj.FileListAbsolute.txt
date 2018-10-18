@@ -22,3 +22,6 @@ C:\Users\Marcos Vallejo\Desktop\Proyectos Visual Studio\TWAnalyzer\TWAnalyzer\TW
 C:\Users\Marcos Vallejo\Desktop\Proyectos Visual Studio\TWAnalyzer\TWAnalyzer\TWAnalyzer\obj\Debug\TWAnalyzer.TrustInfo.xml
 C:\Users\Marcos Vallejo\Desktop\Proyectos Visual Studio\TWAnalyzer\TWAnalyzer\TWAnalyzer\obj\Debug\TWAnalyzer.exe.manifest
 C:\Users\Marcos Vallejo\Desktop\Proyectos Visual Studio\TWAnalyzer\TWAnalyzer\TWAnalyzer\obj\Debug\TWAnalyzer.application
+C:\Users\mvallejo\Documents\GitHub\twsc\TWAnalyzer\bin\Debug\TWAnalyzer.exe.config
+C:\Users\mvallejo\Documents\GitHub\twsc\TWAnalyzer\obj\Debug\TWAnalyzer.exe
+C:\Users\mvallejo\Documents\GitHub\twsc\TWAnalyzer\obj\Debug\TWAnalyzer.pdb
