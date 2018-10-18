@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using System.Text;
 using TweetSharp;
 using System.Threading;
-using System.IO;
 using RapiTools.Fields;
-using TWAnalyzer.JarvisComplements;
+using JarvisComplements;
 
 namespace TWAnalyzer
 {

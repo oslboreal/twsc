@@ -4,8 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using RapiTools.Fields;
+using TWAnalyzer;
 
-namespace TWAnalyzer.JarvisComplements
+namespace JarvisComplements
 {
     public static class GestorPost
     {

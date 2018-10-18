@@ -127,14 +127,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TWAnalyzer.exe" size="459264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TWAnalyzer.exe" size="459776">
       <assemblyIdentity name="TWAnalyzer" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>lRu7ls2B3DBTWmoJpjLiL3msEFiTdcC7LbLVco23Nhs=</dsig:DigestValue>
+        <dsig:DigestValue>YbNtVWZ/O/woq0MoWPW2Clpz7w8AumugY9QzuSOOKt0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

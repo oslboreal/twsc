@@ -67,7 +67,7 @@
             this.MinimumSize = new System.Drawing.Size(55, 55);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TwAnalyzer -@Boreal_Arg - v2.1.1";
+            this.Text = "TwScraper -@Boreal_Arg - v1.0.4";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
