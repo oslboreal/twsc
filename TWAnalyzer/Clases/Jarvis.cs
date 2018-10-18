@@ -4,11 +4,13 @@ using System.Text;
 using TweetSharp;
 using System.Threading;
 using System.IO;
+using RapiTools.Fields;
 
 namespace TWAnalyzer
 {
     static class Jarvis
     {
+        public static TextField Nombre = new TextField("BotName");
         private static JarvisResponse jResponse;
         private static TwitterService mainService;
 

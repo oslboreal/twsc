@@ -118,6 +118,8 @@
     </Compile>
     <Compile Include="Clases\Jarvis.cs" />
     <Compile Include="Clases\JarvisResponse.cs" />
+    <Compile Include="JarvisComplements\GestorPost.cs" />
+    <Compile Include="JarvisComplements\Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Clases\Vista.cs" />
